@@ -56,12 +56,18 @@
                     <option value="pm">Project Management</option>
                     <option value="qa">QA Manual</option>
                 </select>
+
                 <textarea name="message" id="message" placeholder="Country, region, city/town, street "></textarea>
-                <input type="checkbox" id="agreement" name="agreement" value="Yes"> 
-                <label for="agreement"> I agree to the processing of personal data</label><br>
                 
-                <input type="reset" value="Reset">
-                <input type="submit" value="Send">
+                <div class="checkbox">
+                   <input type="checkbox" id="agreement" name="agreement" value="Yes"> 
+                   <label for="agreement"> I agree to the processing of personal data</label><br>
+                </div>
+                
+                <div class="buttons">
+                    <input type="reset" value="Reset" >
+                    <input type="submit" value="Send">
+                </div>
             </form>    
             </section>
 		<footer></footer>

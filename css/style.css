@@ -50,3 +50,14 @@
     border: 1px solid #d0c2c2;
     border-radius: 50%; 
 }
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
