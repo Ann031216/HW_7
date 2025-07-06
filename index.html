@@ -15,41 +15,51 @@
 		<header class="header">
 		</header>		
 		<main>
-				
-			<section class="form">
+			<div class="container">
+			<section class="section_form">
             <h2>Form</h2>
             <form action="" method="get" class="form"> 
-                <label for="name" class="'form_label">Last name</label>
+               <div class="field">  
+                <label for="name" class="form_label">Last name</label>
                 <input type="text" class="form_input" placeholder="Last name" required>
-                <label for="name" class="'form_label">First name</label>
-                <input type="text" class="form_label" placeholder="First name" required>
+               </div>
+               <div class="field"> 
+                <label for="name" class="form_label">First name</label>
+                <input type="text" class="form_input" placeholder="First name" required>
+                </div>
+                <div class="field"> 
                 <label name="email" class="form_label">Email</label>
                 <input type="mail" class="form_input" placeholder="email">
+                </div>
+                <div class="field"> 
                 <label for="password" class="form_label">Your password</label>
                 <input type="password" id="password" class="form_input" placeholder="your password">
+               </div>
+               <div class="field"> 
                 <label for="password" class="form_label">Repeat the password</label>
                 <input type="password" id="password" class="form_input" placeholder="your password">
+                </div>
                 
-                <div class="form__gender gender">
-                        <h2 class="title_2"></h2>
-                        <div class="gender__item">
+                        <div class="gender_item">
                             <h4>Gender</h4>
                             <label>
                                 Women
                                 <input type="radio" name="gender">
-                                <!-- <span class="gender__check"></span> -->
+                                <!-- <span class="gender_check"></span> -->
                             </label>
                             <label>
                                 Men
                                 <input type="radio" name="gender">
-                                <!-- <span class="gender__check"></span> -->
+                                <!-- <span class="gender_check"></span> -->
                             </label>
                         </div>
-                    </div>
-                <label for="age"class="form_label">Age</label>
-                <input type="age" class="form_input" placeholder="age">
+                    
+                    <div class="field">
+                       <label for="age"class="form_label">Age</label>
+                       <input type="age" class="form_input_age" placeholder="enter your age">
+                     </div>
 
-                <select name="cours" class="form__select">
+                <select name="cours" class="form_select">
                     <option value="" selected disabled>Choose a course...</option>
                     <option value="front" >Front-End</option>
                     <option value="back">Back-End</option>
@@ -57,19 +67,20 @@
                     <option value="qa">QA Manual</option>
                 </select>
 
-                <textarea name="message" id="message" placeholder="Country, region, city/town, street "></textarea>
+                <textarea name="message" class="text_area" id="message" placeholder="Country, region, city/town, street "></textarea>
                 
                 <div class="checkbox">
                    <input type="checkbox" id="agreement" name="agreement" value="Yes"> 
-                   <label for="agreement"> I agree to the processing of personal data</label><br>
+                   <label class="label_checkbox" for="agreement"> I agree to the processing of personal data</label><br>
                 </div>
                 
                 <div class="buttons">
-                    <input type="reset" value="Reset" >
-                    <input type="submit" value="Send">
+                    <input type="reset" class="type_button" value="Reset" >
+                    <input type="submit" class="type_button" value="Send">
                 </div>
             </form>    
-            </section>
+          </section>
+         </div> 
 		<footer></footer>
 	</body>
 </html>

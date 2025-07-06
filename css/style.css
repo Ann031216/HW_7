@@ -5,11 +5,18 @@
     font-size: var(--main-font-size);
    }
    .container {
-    width: 970px;
-    margin: 0 auto;
+    /*max-width: 970px;*/
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/background_2.jpg);
+    background-size: cover;
 }
-
-
+.section_form {
+    padding: 10px;
+    color:#513464; 
+}
 .form {
     border: 1px solid #1c3b39;
     min-width: 380px;
@@ -18,31 +25,53 @@
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    background: linear-gradient(205deg, #486a74, #9be2ed);
-    box-shadow: 3px 4px 9px 4px #346064;
+    background: linear-gradient(205deg, #d8d3c880, #554964b6);
+    box-shadow: 3px 4px 9px 4px #513464;
 }
-.form__label {
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.field_age{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.form_label {
     margin-bottom: 8px;
+    display: block;
 }
-.form__input,
-.form__select {
+.form_input,
+.form_select {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 6px 10px;
-   /* border-radius: 8px;*/
+    border-radius: 8px;
     border: 1px solid #879594;
 }
-.gender__item {
+.form_input_age {
+    flex-grow: 2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 6px 10px;
+   border-radius: 8px;
+    border: 1px solid #879594;
+}
+.gender_item {
     display: flex;
     gap: 5vw;
     justify-content: flex-start;
    
 }
-.gender__item label {
+.gender_item label {
     display: flex;
     align-items: center;
 }
-.gender__check {
+.gender_check {
     position: relative;
     width: 20px;
     height: 20px;
@@ -50,14 +79,32 @@
     border: 1px solid #d0c2c2;
     border-radius: 50%; 
 }
-.checkbox {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.text_area {
+    width: 400px; 
+    height: 100px; 
+    border: 2px solid #ccc;
+    padding: 15px; 
+    margin-bottom: 10px;
+    border-radius: 8px;
+    
 }
+.checkbox {
+    margin: 15px 0px 15px 0px;
+}
+
+.label_checkbox {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.type_button {
+    width: 80px; 
+    height: 30px; 
+    border-radius: 8px;
+    color: #513464;
 }
